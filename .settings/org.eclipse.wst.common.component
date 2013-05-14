@@ -2,6 +2,7 @@
     <wb-module deploy-name="Ecommerce_Web">
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resource"/>
         <property name="context-root" value="Ecommerce_Web"/>
         <property name="java-output-path" value="/Ecommerce_Web/build/classes"/>
     </wb-module>

@@ -8,5 +8,8 @@
 		<action name="showDemo" class="com.ecom.demo.controller.DemoAction" method="showDemo">
 			<result>jsp/demo/demo.jsp</result>
 		</action>
+		<action name="insertDemo" class = "com.ecom.demo.controller.DemoAction" method="insertDemo">
+			<result>jsp/demo/demo.jsp</result>
+		</action>
 	</package>
 </struts>
