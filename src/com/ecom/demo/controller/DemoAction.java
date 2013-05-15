@@ -16,6 +16,11 @@ import com.opensymphony.xwork2.ActionSupport;
 public class DemoAction extends ActionSupport {
 	
 	private List<DemoForm> demoList=new ArrayList<DemoForm>();
+	private DemoForm demoParam = null;
+	
+	
+
+
 	private DemoService service=null;
 	
 	{
@@ -36,6 +41,21 @@ public class DemoAction extends ActionSupport {
 		return SUCCESS;
 	}
 
+	public String insertDemo() throws  IllegalAccessException, InstantiationException, InvocationTargetException, NoSuchMethodException{
+		System.out.println("aaaaa");
+		Demo demo = new Demo();
+		System.out.println("bbbb");
+		demo.setDemoId(demoParam.getDemoId());
+		demo.setDescription(demoParam.getDescription());
+		demo.setName(demoParam.getName());
+		System.out.println("ssss");
+		java.util.Date now = new 	java.util.Date();
+		demo.setDate(now);
+		
+		service.insertDemo(demo);
+		
+		return SUCCESS;
+	}
 
 	public List<DemoForm> getDemoList() {
 		return demoList;
@@ -44,6 +64,14 @@ public class DemoAction extends ActionSupport {
 
 	public void setDemoList(List<DemoForm> demoList) {
 		this.demoList = demoList;
+	}
+	
+	public DemoForm getDemoParam() {
+		return demoParam;
+	}
+
+	public void setDemoParam(DemoForm demoParam) {
+		this.demoParam = demoParam;
 	}
 	
 }

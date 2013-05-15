@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<form action="#" method="post">
+<form action="insertDemo" method="post">
 	<table>
 		<tr>
 			<td>demoId</td>
@@ -27,6 +27,15 @@
 			<td><s:property value="date"/></td>
 		</tr>
 		</s:iterator>
+		<tr>
+			<td><input type="text" name="demoParam.demoId" /> </td>
+			<td><input type="text" name="demoParam.name" /> </td>
+			<td><input type="text" name="demoParam.description" /> </td>
+			<td><input type="text" name="demoParam.date" /> </td>
+		</tr>
+		<tr>
+			<td colspan="3"><input type="submit" title="提交" /></td>
+		</tr>
 	</table>
 </form>
 
