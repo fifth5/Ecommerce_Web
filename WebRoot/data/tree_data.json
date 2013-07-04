@@ -1,0 +1,11 @@
+[{
+	"id":1,
+	"text":"Book Admin",
+	"children":[{
+		"id":11,
+		"text":"Publisher Admin",
+		"attributes":{
+					"url":"entryPublisher"
+				}
+	}]
+}]

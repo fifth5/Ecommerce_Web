@@ -17,10 +17,6 @@ public class DemoAction extends ActionSupport {
 	
 	private List<DemoForm> demoList=new ArrayList<DemoForm>();
 	private DemoForm demoParam = null;
-	
-	
-
-
 	private DemoService service=null;
 	
 	{

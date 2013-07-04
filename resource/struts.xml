@@ -12,4 +12,28 @@
 			<result>jsp/demo/demo.jsp</result>
 		</action>
 	</package>
+	
+	<package name="book" extends="struts-default,json-default">
+		<action name="entryPublisher" class="com.ecom.book.controller.PublisherAction" method="entryPublisher">
+			<result>../book/publisher.jsp</result>
+		</action>
+		
+		<action name="loadPublisher" class="com.ecom.book.controller.PublisherAction" method="loadPublisher">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		
+		<action name="savePublisher" class="com.ecom.book.controller.PublisherAction" method="savePublisher">
+			<result />
+		</action>
+		
+		<action name="editPublisher" class="com.ecom.book.controller.PublisherAction" method="editPublisher">
+			<result />		
+		</action>
+		
+		<action name="destroyPublisher" class="com.ecom.book.controller.PublisherAction" method="destroyPublisher">
+			<result type="json" />
+		</action>
+	</package>
 </struts>
