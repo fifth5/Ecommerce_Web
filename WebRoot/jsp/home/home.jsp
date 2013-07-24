@@ -8,10 +8,12 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/themes/icon.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/easyui/demo/demo.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/book/publisher.css">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/book/author.css">
 <script type="text/javascript" src="${pageContext.request.contextPath}/script/jquery/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/easyui/jquery.easyui.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/script/index.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/script/book/publisher.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/script/book/author.js"></script>
 <title>home</title>
 </head>
 <body class="easyui-layout">

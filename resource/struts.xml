@@ -14,10 +14,37 @@
 	</package>
 	
 	<package name="book" extends="struts-default,json-default">
-		<action name="entryPublisher" class="com.ecom.book.controller.PublisherAction" method="entryPublisher">
-			<result>../book/publisher.jsp</result>
+	
+		<!-- author  modules -->
+		<action name="entryAuthor" class="com.ecom.book.controller.AuthorAction" method="entryAuthor">
+			<result>../book/author.jsp</result>
 		</action>
 		
+		<action name="loadAuthor" class="com.ecom.book.controller.AuthorAction" method="loadAuthor">
+			<result type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		
+		<action name="saveAuthor" class="com.ecom.book.controller.AuthorAction" method="saveAuthor">
+			<result />
+		</action>
+		
+		<action name="editAuthor" class="com.ecom.book.controller.AuthorAction" method="editAuthor">
+			<result />		
+		</action>
+				
+		<action name="destroyAuthor" class="com.ecom.book.controller.AuthorAction" method="destroyAuthor">
+			<result type="json" />
+		</action>
+		
+				
+			
+		<!-- publisher modules -->
+		<action name="entryPublisher" class="com.ecom.book.controller.PublisherAction" method="entryPublisher">
+			<result>../book/publisher.jsp</result>
+		</action>	
+
 		<action name="loadPublisher" class="com.ecom.book.controller.PublisherAction" method="loadPublisher">
 			<result type="json">
 				<param name="root">dataMap</param>

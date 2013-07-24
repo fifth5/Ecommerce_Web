@@ -1,11 +1,20 @@
 [{
 	"id":1,
 	"text":"Book Admin",
-	"children":[{
+	"children":[
+	{
 		"id":11,
 		"text":"Publisher Admin",
 		"attributes":{
 					"url":"entryPublisher"
 				}
-	}]
+	},
+	{
+		"id":12,
+		"text":"Author Admin",
+		"attributes":{
+					"url":"entryAuthor"
+				}
+	}
+	]
 }]
